@@ -43,7 +43,7 @@ def hard(word):
                         fed[i]="X"
                     else:
                         if b not in icl:
-                            icl.append(b)#grammata poy den yparxoyn sto guess
+                            icl.append(b)
             else:
                 if i not in z:
                     z.append(i)
@@ -80,7 +80,7 @@ def hard(word):
         
         c= "".join(fed)
         d ="".join(anyp)
-        #alph_join = "".join(alph) mou aresei perisotero na emfanizetai san lista
+        
         print("letters you can use",alph)
         print("letters that not exist in secret word", d)
 
@@ -118,7 +118,7 @@ def normal(word):
         fed = ['-' for _ in lista_word]
 
   
-        guess = input("give a word: No"+str(number)).upper()#na to kanw na dinei tis fores pou edwse leksi       
+        guess = input("give a word: No"+str(number)).upper()      
         print(guess)
         
         if len(guess)!=5:
@@ -136,7 +136,7 @@ def normal(word):
                 fed[i]="X"
             else:
                 if b not in icl:
-                    icl.append(b)#grammata poy den yparxoyn sthn mantepsia
+                    icl.append(b)
                 
                 
         for i in guess:
@@ -192,4 +192,5 @@ if mode == "h":
 else:
     mode_normal = normal(random_word)
     print(mode_normal)
+
 
