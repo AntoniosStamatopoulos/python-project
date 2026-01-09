@@ -1,4 +1,4 @@
-#ANTONIS STAMATOPOULOS AM 05629 
+
 
 import random
 #----------------------------hard-----------------------------------------------------------
@@ -194,3 +194,4 @@ if mode == "h":
 else:
     mode_normal = normal(random_word)
     print(mode_normal)
+
